@@ -48,8 +48,8 @@ const Footer = () => {
     <FOOTER>
       <LeftText>
         © 2021 Built and Design by{" "}
-        <a href="https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA">
-          @CodeBucks
+        <a href="https://www.linkedin.com/company/72700837/admin/">
+          @StartupKingdoms
         </a>
       </LeftText>
       <RightText>

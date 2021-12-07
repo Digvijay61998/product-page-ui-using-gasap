@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import wave from "../../assets/waves.svg";
 import rocket from "../../assets/rocket image.png";
-import human from "../../assets/human.svg";
+import human from "../../assets/human.jpg";
 import hand from "../../assets/hand.svg";
 
 const move = keyframes`
@@ -11,6 +11,7 @@ const move = keyframes`
 `;
 
 const AboutSection = styled.section`
+background-color: white;
   width: 100vw;
   position: relative;
   display: flex;

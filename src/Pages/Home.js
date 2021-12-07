@@ -1,6 +1,7 @@
 //This is home page, It will contains all the sections require in this page.
 
 //Import all the require sections here
+import Frontpage from "../Sections/frontPage/Frontpage";
 import HeroSection from "../Sections/Hero/index";
 import About from "../Sections/About/index";
 import Services from "../Sections/Services/index";
@@ -19,6 +20,7 @@ const Container = styled.div`
 const Home = () => {
   return (
     <Container>
+     <Frontpage />
       <HeroSection />
       <About />
       <Services />

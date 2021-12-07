@@ -15,7 +15,7 @@ import SvgBlock from "../../components/SvgBlock";
 
 const ServiceSection = styled.section`
   width: 100vw;
-  /* background-color: #0a0b10; */
+  background-color: white;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -124,7 +124,7 @@ const Services = () => {
   useEffect(() => {
     const element = ref.current;
     ////
-    const mq = window.matchMedia("(max-width: 48em)");
+    const mq = window.matchMedia("(max-width: 90em)");
     const t1 = gsap.timeline({
       scrollTrigger: {
         trigger: document.getElementById("services"),
@@ -220,7 +220,7 @@ const Services = () => {
             el,
 
             {
-              opacity: 0,
+              // opacity: 0,
 
               ease: "power2",
               scrollTrigger: {
@@ -238,7 +238,7 @@ const Services = () => {
 
           {
             x: -300,
-            opacity: 0,
+            // opacity: 0,
             duration: 2,
 
             ease: "power2",
@@ -291,22 +291,22 @@ const Services = () => {
               },
             }
           )
-          .to(
-            el,
+          // .to(
+          //   el,
 
-            {
-              opacity: 0,
+          //   {
+          //     opacity: 0,
 
-              ease: "power2",
-              scrollTrigger: {
-                id: `section-${index + 1}`,
-                trigger: el,
-                start: "top top+=200",
-                end: "center top+=300",
-                scrub: true,
-              },
-            }
-          );
+          //     ease: "power2",
+          //     scrollTrigger: {
+          //       id: `section-${index + 1}`,
+          //       trigger: el,
+          //       start: "top top+=200",
+          //       end: "center top+=300",
+          //       scrub: true,
+          //     },
+          //   }
+          // );
       }
     });
   }, []);
@@ -329,9 +329,9 @@ const Services = () => {
           topic="Design"
           title={<h1>We build award winning Designs</h1>}
           subText={
-            <h5>
+            <h1>
               We help clients to build great design to attract more customers
-            </h5>
+            </h1>
           }
         />
         <OBJ>
@@ -344,10 +344,10 @@ const Services = () => {
           topic="Develop"
           title={<h1>We Develope high quality Web & App</h1>}
           subText={
-            <h5>
+            <h1>
               We build appropriate solution to develope your website & app with
               best tools available
-            </h5>
+            </h1>
           }
         />
         <OBJ>
@@ -360,11 +360,11 @@ const Services = () => {
           topic="Support"
           title={<h1>We provide support for your digital presence</h1>}
           subText={
-            <h5>
+            <h1>
               Once your system is online, we will stay on hand to help you use
               it and provide technical support and maintenance <br /> your
               business
-            </h5>
+            </h1>
           }
         />
         <OBJ>

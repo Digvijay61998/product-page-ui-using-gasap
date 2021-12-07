@@ -2,13 +2,13 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo.png";
 
 const Headers = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5rem;
+  padding: 0.1rem 5rem;
   background-color: var(--nav);
   color: var(--white);
   position: relative;
@@ -28,13 +28,15 @@ const Logo = styled.a`
   height: auto;
   cursor: pointer;
   img {
+    width:60px;
+    height:60px;
     margin-right: 0.5rem;
   }
 `;
 
 const Nav = styled.nav`
   width: 25rem;
-  max-width: 40rem;
+  max-width: 30rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -212,7 +214,7 @@ const Header = () => {
         top: "1rem",
         left: "3rem",
         right: "3rem",
-        padding: "1.5rem 2rem",
+        padding: "0rem 2rem",
 
         borderRadius: "50px",
 
@@ -235,7 +237,7 @@ const Header = () => {
     <Headers ref={ref}>
       <Logo>
         <img src={logo} alt="CodeBucks" />
-        <h3>CodeBucks</h3>
+        <h3>MayPHeN_sKuNzz</h3>
       </Logo>
       <Nav>
         <a href="#home" onClick={(e) => scrollUp("home", e)}>

@@ -1,5 +1,7 @@
 import { GlobalStyle } from "./globalStyles";
 import { lazy, Suspense } from "react";
+// import Model from './components/threeDlogo/SkingLogo';
+// import { Canvas } from '@react-three/fiber';
 
 const Home = lazy(() => import("./Pages/Home"));
 const Header = lazy(() => import("./components/Header/index"));
