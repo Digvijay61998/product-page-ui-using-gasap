@@ -8,6 +8,7 @@ import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 const Card = lazy(() => import("../../components/Card/index"));
 
 const Section = styled.div`
+background: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;

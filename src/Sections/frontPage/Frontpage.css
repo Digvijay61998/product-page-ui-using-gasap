@@ -1,0 +1,731 @@
+.Home-section {
+  height: 100vh;
+  background-color: #0a0b10;
+  width: 100%;
+  }
+
+  .Home-Cname{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 409px;
+    top: 383px;
+    width: 100%;
+  }
+
+  .Home-container{
+    padding: 15px 95px 53px 197px;
+
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: -42px;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    z-index: 100;
+    background: #fff;
+    background: linear-gradient(
+      0deg, rgb(10 11 16) 75%, rgb(10 11 16) 80%, rgb(0 0 0 / 25%) 95%, rgb(0 0 0 / 0%) 100%);
+        }
+        
+  
+  .text {
+    font-family: "Yanone Kaffeesatz";
+    font-size: 100px;
+    display: flex;
+    position: absolute;
+    bottom: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    user-select: none;
+  }
+  .text .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  .text .wrapper .letter {
+    transition: ease-out 1s;
+    transform: translateY(35%);
+    color: white;
+  }
+  .text .wrapper .shadow {
+    transform: scale(1, -1);
+    color: #757575;
+    transition: ease-in 5s, ease-out 5s;
+  }
+  .text .wrapper:hover .letter {
+    transform: translateY(-33%);
+  }
+  .text .wrapper:hover .shadow {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  
+  .Home-ellipses-container {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    position: relative;
+    /* top: -47px; */
+    float: right;
+    margin: -78px 0px 0 83px;
+  }
+  /* @media only screen and (min-width: 661px) and (max-width: 979px) {	
+  
+   
+    .Home-ellipses-container {
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      position: relative;
+      top: 70px;
+      float: right;
+      margin: 0 20px 0 20px;
+       -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8) !important;
+  }} */
+  
+  .Home-socialicons {
+    width: 128px;
+    height: 128px;
+    top: calc(50% - 64px);
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    left: calc(50% - 64px);
+    transition: background 0.5s linear;
+    
+  
+  }
+  
+  
+  .Home-ellipses {
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    border-style: solid;
+  
+  }
+  
+  .Home-ellipses__inner {
+    width: 88%;
+    height: 88%;
+    margin: 6%;
+    border-color: turquoise transparent;
+    border-width: 1px;
+    animation: ellipsesOrbit 21s ease-in-out infinite;
+  }
+  
+  .Home-ellipses__outer--thin {
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    border-color: #3334;
+    animation: ellipsesOrbit 15s ease-in-out infinite;
+  }
+  
+  .Home-ellipses__outer--thick {
+    width: 100%;
+    height: 100%;
+    border-color: turquoise transparent;
+    border-width: 2px;
+    transform: rotate(-45deg);
+    animation: ellipsesRotate 15s ease-in-out infinite;
+  }
+  
+  .Home-ellipses__orbit {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-width: 2px;
+    border-color: turquoise;
+   margin-top:85px;
+  }
+  .Home-ellipses__orbit:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: turquoise;
+    margin: 0 auto;
+    transform: translateY(-50%);
+  }
+  
+  @keyframes ellipsesRotate {
+    0% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(-405deg);
+    }
+  }
+  @keyframes ellipsesOrbit {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .sun {
+    background: #fffafa;
+    border-radius: 50%;
+    width: 20vmin;
+    height: 20vmin;
+    left: calc(60% - 10vmin);
+    top: 100%;
+    transform: translate3d(0, 0, 0);
+    /* animation: rise 20s infinite; */
+    box-shadow: 0 0 10px white;
+  }
+  @keyframes rise {
+    10% {
+        transform: translate3d(0, -100vh, 20vmin);
+      }
+      50% {
+        transform: translate3d(0, -100vh, 20vmin);
+      }
+    100% {
+      transform: translate3d(0, -100vh, 20vmin);
+    }
+  }
+
+.Home-Splash-Container{
+    position: absolute;
+    height: 23vh;
+    width: 33%;
+    top: 27%;
+    margin-left: 35%;
+    z-index: 200;
+}
+
+.splash {
+    width: 61vmin;
+    height: 3vmin;
+    border: 2px solid var(--s1);
+    box-shadow: 0 0 2px var(--s1);
+    border-radius: 50%;
+    bottom: 5vmin;
+    left: 70%;
+    animation: splash 9s infinite;
+    transform: scale(0);
+    background:white;
+  }
+  
+  .splash-stone {
+    bottom: 15vh;
+    left: -3vmin;
+    height: 10vmin;
+    width: 30vmin;
+  }
+  
+  .splash-4 {
+    bottom: 5vmin;
+    left: auto;
+    bottom: 15vmin;
+    right: -2vmin;
+  }
+  
+  @keyframes splash {
+    50%,
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  .delay-1 {
+    animation-delay: 1s;
+  }
+  .delay-2 {
+    animation-delay: 2s;
+  }
+  .delay-3 {
+    animation-delay: 3s;
+  }
+  .delay-4 {
+    animation-delay: 4s;
+  }
+  .delay-5 {
+    animation-delay: 5s;
+  }
+  .delay-6 {
+    animation-delay: 6s;
+  }
+  
+
+  .spaceimg{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+  }
+
+  .space1{
+    left: -163px;
+    top: 62px;
+    height: 55%;
+    width: 19%;
+    filter: brightness(70%);
+
+  }
+
+  .space2{
+    right: 22px;
+    top: 376px;
+    height: 34%;
+    width: 8%;
+    filter: brightness(59%);
+
+  }
+
+  .space3{
+    right: -112px;
+    top: 227px;
+    height: 71%;
+    width: 37%;
+    filter: brightness(100%);
+
+  }
+  .space4{
+    filter: brightness(91%);
+    left: 14px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .sky {
+    left: -39%;
+    top: -284px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateZ(
+45deg);
+}
+  
+/* Here we are making roundabout balls  */
+.star {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 2px;
+  border-radius: 885px;
+  background: linear-gradient(-45deg, 
+    #eef0f5, rgba(0, 0, 255, 0));
+  
+  -webkit-filter: drop-shadow(0 0 6px #eef1f8);
+  filter: drop-shadow(0 0 6px #d7dff0);
+  -webkit-animation: tail 3000ms ease-in-out infinite,
+    shooting 3000ms ease-in-out infinite;
+  animation: tail 3000ms ease-in-out infinite,
+    shooting 3000ms ease-in-out infinite;
+}
+  
+/* Here we add before and after effect to star */
+.star::before,
+.star::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #eaeef8,
+    rgba(0, 0, 255, 0)
+  );
+  -webkit-transform: translateX(50%) rotateZ(45deg);
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  -webkit-animation: shining 3000ms ease-in-out infinite;
+  animation: shining 3000ms ease-in-out infinite;
+}
+.star::after {
+  -webkit-transform: translateX(50%) rotateZ(-45deg);
+  transform: translateX(50%) rotateZ(-45deg);
+}
+  
+/* Here we are adding location of each 
+   nth-child, animations, delays, and 
+   before and after effects to each 
+   and every balls(stars) */
+.star:nth-child(1) {
+  top: calc(50% - -119px);
+  left: calc(50% - 43px);
+  -webkit-animation-delay: 4000ms;
+  animation-delay: 4000ms;
+}
+.star:nth-child(1)::before,
+.star:nth-child(1)::after {
+  -webkit-animation-delay: 4000ms;
+  animation-delay: 4000ms;
+}
+.star:nth-child(2) {
+  top: calc(50% - -43px);
+  left: calc(50% - 37px);
+  -webkit-animation-delay: 5000ms;
+  animation-delay: 5000ms;
+}
+.star:nth-child(2)::before,
+.star:nth-child(2)::after {
+  -webkit-animation-delay: 5000ms;
+  animation-delay: 5000ms;
+}
+.star:nth-child(3) {
+  top: calc(50% - -40px);
+  left: calc(50% - 222px);
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.star:nth-child(3)::before,
+.star:nth-child(3)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.star:nth-child(4) {
+  top: calc(50% - -29px);
+  left: calc(50% - 113px);
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.star:nth-child(4)::before,
+.star:nth-child(4)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.star:nth-child(5) {
+  top: calc(50% - 146px);
+  left: calc(50% - 112px);
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.star:nth-child(5)::before,
+.star:nth-child(5)::after {
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.star:nth-child(6) {
+  top: calc(50% - -108px);
+  left: calc(50% - 160px);
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.star:nth-child(6)::before,
+.star:nth-child(6)::after {
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.star:nth-child(7) {
+  top: calc(50% - 52px);
+  left: calc(50% - 72px);
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.star:nth-child(7)::before,
+.star:nth-child(7)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+  
+/* This code will help to generate 
+effect in tail of star */
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+}
+  
+/* This code will generate shining 
+effect in head of star */
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+  
+/* Here we are adding webkit-animation 
+to head of star for shining */
+@-webkit-keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+  
+/* Here we are adding webkit-animation 
+to tail of star */
+@-webkit-keyframes tail {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+}
+  
+/* Here we are adding webkit-animation 
+for shooting effect */
+@-webkit-keyframes shooting {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(270px);
+    transform: translateX(270px);
+  }
+}
+  
+/* Here we make shooting effect */
+@keyframes shooting {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(270px);
+    transform: translateX(270px);
+  }
+}
+
+
+.shinestarsky {
+    left: 16%;
+    top: -102px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  
+}
+
+
+/* Here we are making roundabout balls  */
+.shinestar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 2px;
+  border-radius: 885px;
+  background: linear-gradient(-45deg, 
+    #eef0f5, rgba(0, 0, 255, 0));
+  
+  -webkit-filter: drop-shadow(0 0 6px #eef1f8);
+  filter: drop-shadow(0 0 6px #d7dff0);
+}
+  
+/* Here we add before and after effect to shinestar */
+.shinestar::before,
+.shinestar::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #eaeef8,
+    rgba(0, 0, 255, 0)
+  );
+  -webkit-transform: translateX(50%) rotateZ(45deg);
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  -webkit-animation: shining 3000ms ease-in-out infinite;
+  animation: shining 3000ms ease-in-out infinite;
+}
+.shinestar::after {
+  -webkit-transform: translateX(50%) rotateZ(-45deg);
+  transform: translateX(50%) rotateZ(-45deg);
+}
+  
+/* Here we are adding location of each 
+   nth-child, animations, delays, and 
+   before and after effects to each 
+   and every balls(shinestars) */
+.shinestar:nth-child(1) {
+  top: calc(50% - -119px);
+  left: calc(50% - 43px);
+  -webkit-animation-delay: 4000ms;
+  animation-delay: 4000ms;
+}
+.shinestar:nth-child(1)::before,
+.shinestar:nth-child(1)::after {
+  -webkit-animation-delay: 4000ms;
+  animation-delay: 4000ms;
+}
+.shinestar:nth-child(2) {
+  top: calc(50% - -43px);
+  left: calc(50% - 37px);
+  -webkit-animation-delay: 5000ms;
+  animation-delay: 5000ms;
+}
+.shinestar:nth-child(2)::before,
+.shinestar:nth-child(2)::after {
+  -webkit-animation-delay: 5000ms;
+  animation-delay: 5000ms;
+}
+.shinestar:nth-child(3) {
+  top: calc(50% - -40px);
+  left: calc(50% - 222px);
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.shinestar:nth-child(3)::before,
+.shinestar:nth-child(3)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.shinestar:nth-child(4) {
+  top: calc(50% - -29px);
+  left: calc(50% - 113px);
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.shinestar:nth-child(4)::before,
+.shinestar:nth-child(4)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.shinestar:nth-child(5) {
+  top: calc(50% - 146px);
+  left: calc(50% - 112px);
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.shinestar:nth-child(5)::before,
+.shinestar:nth-child(5)::after {
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.shinestar:nth-child(6) {
+  top: calc(50% - -108px);
+  left: calc(50% - 160px);
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.shinestar:nth-child(6)::before,
+.shinestar:nth-child(6)::after {
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.shinestar:nth-child(7) {
+  top: calc(27% - 6px);
+  left: calc(85% - 31px);
+  animation-delay: 7000ms;
+}
+.shinestar:nth-child(7)::before,
+.shinestar:nth-child(7)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+  
+
+
+.shinestar:nth-child(8) {
+  top: calc(6% - -119px);
+  left: calc(69% - 43px);
+  animation-delay: 4000ms;
+}
+.shinestar:nth-child(8)::before,
+.shinestar:nth-child(8)::after {
+  -webkit-animation-delay: 4000ms;
+  animation-delay: 4000ms;
+}
+.shinestar:nth-child(9) {
+  top: calc(16% - -43px);
+  left: calc(50% - 37px);
+  animation-delay: 5000ms;
+}
+.shinestar:nth-child(9)::before,
+.shinestar:nth-child(9)::after {
+  -webkit-animation-delay: 5000ms;
+  animation-delay: 5000ms;
+}
+.shinestar:nth-child(10) {
+  top: calc(27% - -40px);
+  left: calc(86% - 222px);
+  animation-delay: 7000ms;
+}
+.shinestar:nth-child(10)::before,
+.shinestar:nth-child(10)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.shinestar:nth-child(11) {
+  top: calc(21% - -29px);
+  left: calc(87% - 113px);
+  animation-delay: 7000ms;
+}
+.shinestar:nth-child(11)::before,
+.shinestar:nth-child(11)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.shinestar:nth-child(12) {
+  top: calc(42% - 146px);
+  left: calc(50% - 112px);
+  animation-delay: 3000ms;
+}
+.shinestar:nth-child(12)::before,
+.shinestar:nth-child(12)::after {
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.shinestar:nth-child(13) {
+  top: calc(13% - -108px);
+  left: calc(66% - 160px);
+  animation-delay: 3000ms;
+}
+.shinestar:nth-child(13)::before,
+.shinestar:nth-child(13)::after {
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.shinestar:nth-child(14) {
+  top: calc(34% - 52px);
+  left: calc(56% - 72px);
+  animation-delay: 7000ms;
+}
+.shinestar:nth-child(14)::before,
+.shinestar:nth-child(14)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}

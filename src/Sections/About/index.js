@@ -1,17 +1,19 @@
 import styled, { keyframes } from "styled-components";
 import wave from "../../assets/waves.svg";
 import rocket from "../../assets/rocket image.png";
-import human from "../../assets/human.jpg";
+// import human from "../../assets/human.jpg";
 import hand from "../../assets/hand.svg";
+import graph from "../../assets/graph.gif"
+import "./About.css"
+import aboutBrain from "../../assets/aboutBrain.png"
+import aboutHandshake from "../../assets/aboutHandshake.png"
+import aboutCustomer from "../../assets/aboutCustomer.png"
+import aboutCaring from "../../assets/aboutCaring.png"
+import aboutFrugality from "../../assets/aboutFrugality.png"
 
-const move = keyframes`
-0% { transform: translateY(-5px)         }
-    50% { transform: translateY(10px) translateX(10px)        }
-    100% { transform: translateY(-5px)         }
-`;
 
 const AboutSection = styled.section`
-background-color: white;
+  background-color:  #14104a;
   width: 100vw;
   position: relative;
   display: flex;
@@ -25,19 +27,10 @@ const Waves = styled.img`
   position: absolute;
   top: -1rem;
 `;
-const Hand = styled.div`
-  position: absolute;
-  bottom: -1rem;
-  right: 0;
-
-  @media only Screen and (max-width: 40em) {
-    display: none;
-  }
-`;
 
 const Main = styled.div`
   margin: 0 15rem;
-  margin-top: 15rem;
+  margin-top: 22rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -54,6 +47,7 @@ const Main = styled.div`
 const Title = styled.h1`
   font-size: 2rem;
   display: inline-block;
+  color:white;
 `;
 
 const CurvedLine = styled.div`
@@ -79,27 +73,26 @@ const Rocket = styled.div`
   align-content: center;
   width: 40%;
   padding-bottom: 5rem;
-  animation: ${move} 2.5s ease infinite;
   @media only Screen and (max-width: 40em) {
     width: 50vw;
     padding-bottom: 0;
   }
 `;
 
-const Human = styled.div`
-  width: 50%;
-  position: absolute;
-  right: 0;
-  bottom: 100%;
+// const Human = styled.div`
+//   width: 50%;
+//   position: absolute;
+//   right: 0;
+//   bottom: 100%;
 
-  @media only Screen and (max-width: 40em) {
-    display: none;
-  }
-`;
+//   @media only Screen and (max-width: 40em) {
+//     display: none;
+//   }
+// `;
 const Text = styled.h4`
   font-size: calc(0.5rem + 1vw);
   line-height: 1.5;
-  color: var(--nav2);
+  color: #f7f7f7;
 `;
 const Circle = styled.span`
   display: inline-block;
@@ -122,9 +115,6 @@ const About = () => {
   return (
     <AboutSection id="about">
       <Waves src={wave} alt="" />
-      <Hand>
-        <img src={hand} alt="" />
-      </Hand>
       <Main>
         <div>
           <Title>About Us</Title>
@@ -132,12 +122,12 @@ const About = () => {
         </div>
         <Content>
           <Rocket>
-            <img src={rocket} alt="" width="400" height="400" />
+            <img src={graph} alt="" width="400" height="400" />
           </Rocket>
           <AboutText>
-            <Human>
+            {/* <Human>
               <img src={human} alt="" width="400" height="400" />
-            </Human>
+            </Human> */}
 
             <Text>
               We help our customers to tell about themselves, to grow and stand
@@ -153,6 +143,61 @@ const About = () => {
           </AboutText>
         </Content>
       </Main>
+      <div className="About-content About-row">
+      <div className="About-value-title col-lg-12 col-sm-12 ">
+      <Title>VALUES
+      <span className="About-usderLine"></span>
+      </Title>
+    
+      </div>
+      <div className="col-sm-12 col-lg-4">
+      <div className="About-values-box">
+        <div className="values-box-img">
+          <img src={aboutBrain} alt="think"/>
+        </div>
+<h5 className="About-h5">Think Big</h5>
+<p className="About-p">Think 100x. Use technology for non-linear growth. Failure and experimentation are essential for growth </p>
+        </div>
+      </div>
+      <div className="col-sm-12 col-lg-4">
+      <div className="About-values-box">
+        <div className="values-box-img">
+          <img src={aboutHandshake} alt="hand shake"/>
+        </div>
+<h5 className="About-h5">Fair, Fast & Founder friendly</h5>
+<p className="About-p">Be partner of choice, who is ethical, transparent and collaborative </p>
+        </div>
+      </div>
+      <div className="col-sm-12 col-lg-4">
+      <div className="About-values-box">
+        <div className="values-box-img">
+          <img src={aboutCustomer} alt="Customer delight"/>
+        </div>
+<h5 className="About-h5">Customer delight</h5>
+<p className="About-p">"Customer love matters. Each of our brands needs to be in the top decile of customer experience"</p>
+        </div>
+      </div>
+      <div className="col-sm-12 col-lg-4">
+      <div className="About-values-box">
+        <div className="values-box-img">
+          <img src={aboutCaring} alt="Caring Meritocracy"/>
+        </div>
+<h5 className="About-h5">Caring Meritocracy</h5>
+<p className="About-p">"Attract and grow the best talent. Create an inclusive culture where the best ideas win and you have the obligation to engage and dissent"</p>
+        </div>
+      </div>
+      <div className="col-sm-12 col-lg-4">
+      <div className="About-values-box">
+        <div className="values-box-img">
+          <img src={aboutFrugality} alt="Frugality"/>
+        </div>
+<h5 className="About-h5">Frugality</h5>
+<p className="About-p">"We are frugal with capital and use innovation to grow our brands in a sustainable manner"</p>
+        </div>
+      </div>
+      </div>
+      
+      
     </AboutSection>
   );
 };

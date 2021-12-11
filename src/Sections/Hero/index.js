@@ -7,6 +7,9 @@ import purpleBlob from "../../assets/blob purple.png";
 import whiteBlob from "../../assets/blob white.png";
 import arrow from "../../assets/Arrow Right.svg";
 import Mobile from "../../assets/mobile.gif";
+import space3 from "../../assets/space3.svg"
+import space4 from "../../assets/space4.svg"
+
 
 const move = keyframes`
 0% { transform: translateY(-5px)  }
@@ -175,7 +178,7 @@ const CTA = styled.button`
 const HeroSection = () => {
   return (
     <HomeSection id="home">
-      <Blobs>
+      {/* <Blobs>
         <PinkBlob>
           <img src={pinkBlob} alt="" width="400" height="400" />{" "}
         </PinkBlob>
@@ -185,17 +188,21 @@ const HeroSection = () => {
         <PurpleBlob>
           <img src={purpleBlob} alt="" width="400" height="400" />
         </PurpleBlob>
-      </Blobs>
+      </Blobs> */}
 
       <MainContent id="home">
         <Lb id="leftBlock">
           <Topic>
             <Circle />
-            <span>We Build Web</span>
+            <span>We Build Capitals</span>
           </Topic>
           <Title>Transforming your digital presence</Title>
           <SubText>
-            we help fast growing companies build award winning websites
+          Partner with the best founders to grow digital first brands using technology...
+          OUR VISION is to 
+Bring joy to customers by
+building global brands for
+the digital age
           </SubText>
           <CTA>
             Get in touch &nbsp;
@@ -203,14 +210,17 @@ const HeroSection = () => {
           </CTA>
         </Lb>
 
-        <MobileSvg
+        {/* <MobileSvg
           src={Mobile}
           alt="Mobile Svg"
           srcset=""
           width="400"
           height="400"
-        />
+        /> */}
       </MainContent>
+      <img src={space3} alt="cta"  className="spaceimg space3" />
+      <img src={space4} alt="cta"  className="spaceimg space4" />
+
     </HomeSection>
   );
 };

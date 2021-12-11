@@ -8,6 +8,7 @@ import Services from "../Sections/Services/index";
 import Testimonials from "../Sections/Testimonials/index";
 import Contact from "../Sections/Contact/index";
 import styled from "styled-components";
+import ContactDetails from "../Sections/ContactDetails/index"
 
 const Container = styled.div`
   display: flex;
@@ -25,7 +26,8 @@ const Home = () => {
       <About />
       <Services />
       <Testimonials />
-      <Contact />
+      {/* <Contact /> */}
+      <ContactDetails/>
     </Container>
   );
 };

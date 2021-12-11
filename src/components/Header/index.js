@@ -9,7 +9,7 @@ const Headers = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0.1rem 5rem;
-  background-color: var(--nav);
+  background-color:#0a0b10;
   color: var(--white);
   position: relative;
   z-index: 500;

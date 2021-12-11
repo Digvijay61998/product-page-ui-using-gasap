@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Tube from "../../assets/3dtube.png";
 import Cone from "../../assets/3dtriangle.png";
 import Capsule from "../../assets/3dcapsule.png";
+import factory from "../../assets/factory.svg";
+import qualitytrust from "../../assets/qualitytrust.webp";
 
 import TextBlock from "../../components/TextBlock";
 import SvgBlock from "../../components/SvgBlock";
@@ -15,14 +17,13 @@ import SvgBlock from "../../components/SvgBlock";
 
 const ServiceSection = styled.section`
   width: 100vw;
-  background-color: white;
+  background-color: #14104a;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
   justify-content: center;
   position: relative;
-  padding-top: 20rem;
 `;
 
 const Background = styled.div`
@@ -102,7 +103,7 @@ const Content = styled.div`
 
 const OBJ = styled.div`
   position: absolute;
-  top: 80%;
+  top: 115%;
   right: 35%;
   display: flex;
   justify-content: center;
@@ -335,7 +336,7 @@ const Services = () => {
           }
         />
         <OBJ>
-          <img src={Tube} alt="Tube Object" width="400" height="400" />
+          <img src={factory} alt="Tube Object" width="400" height="400" />
         </OBJ>
         <SvgBlock svg="Design.svg" />
       </Content>
@@ -351,9 +352,9 @@ const Services = () => {
           }
         />
         <OBJ>
-          <img src={Cone} alt="Cone Object" width="400" height="400" />
+          <img src={qualitytrust} alt="Cone Object" width="400" height="400" />
         </OBJ>
-        <SvgBlock svg="Develope.svg" />
+        <SvgBlock svg="smallcode.png" />
       </Content>
       <Content>
         <TextBlock
@@ -370,7 +371,7 @@ const Services = () => {
         <OBJ>
           <img src={Capsule} alt="Capsule Object" width="400" height="400" />
         </OBJ>
-        <SvgBlock svg="Support.svg" />
+        <SvgBlock svg="customer support.svg" />
       </Content>
     </ServiceSection>
   );
