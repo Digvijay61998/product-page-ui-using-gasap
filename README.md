@@ -3,7 +3,7 @@
 This repository Skings official Website in ReactJS.
 
 
-If you want to learn how to create just DSk:
+If you want to learn how to create just call DSk:
 
 ### `yarn start`
 
