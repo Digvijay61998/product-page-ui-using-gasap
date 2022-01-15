@@ -1,8 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import wave from "../../assets/waves.svg";
-import rocket from "../../assets/rocket image.png";
 // import human from "../../assets/human.jpg";
-import hand from "../../assets/hand.svg";
 import graph from "../../assets/graph.gif"
 import "./About.css"
 import aboutBrain from "../../assets/aboutBrain.png"

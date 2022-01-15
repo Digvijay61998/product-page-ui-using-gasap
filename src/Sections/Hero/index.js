@@ -1,12 +1,7 @@
 // This is HeroSection component, Main top section of website
 
 import styled, { keyframes } from "styled-components";
-
-import pinkBlob from "../../assets/blobPink.png";
-import purpleBlob from "../../assets/blob purple.png";
-import whiteBlob from "../../assets/blob white.png";
 import arrow from "../../assets/Arrow Right.svg";
-import Mobile from "../../assets/mobile.gif";
 import space3 from "../../assets/space3.svg"
 import space4 from "../../assets/space4.svg"
 

@@ -1,11 +1,11 @@
 import React from 'react'
 import "./index.css"
 import figures1 from "../../assets/figures1.png";
-import figures2 from "../../assets/figures2.png";
-import figures3 from "../../assets/figures3.png";
-import figures4 from "../../assets/figures4.png";
-import figures5 from "../../assets/figures5.png";
-import figures6 from "../../assets/figures6.png";
+// import figures2 from "../../assets/figures2.png";
+// import figures3 from "../../assets/figures3.png";
+// import figures4 from "../../assets/figures4.png";
+// import figures5 from "../../assets/figures5.png";
+// import figures6 from "../../assets/figures6.png";
 
 export default function ContactDetails() {
     return (
